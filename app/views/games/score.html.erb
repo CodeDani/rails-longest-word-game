@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+    </div>
+    <div class="col-8">
+      <% if @result == 1 %>
+        <p>Sorry but <strong><%= @word %></strong> can't be built out of <%= @letters.join(', ') %></p>
+      <% elsif @result == 2 %>
+        <p>Sorry but <strong><%= @word %></strong> does not seem to be a valid English word... </p>
+      <% else %>
+        <p><strong>Congratulations!</strong> <bold><%= @word %></bold> can be built!</p>
+      <% end %>
+    </div>
+    <div class="col">
+    </div>
+</div>
+<%= link_to "Try again", new_path %>
