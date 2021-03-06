@@ -1,5 +1,4 @@
 {
   "name": "rails-longest-word-game",
-  "private": true,
-  "dependencies": {}
+  "private": true
 }
